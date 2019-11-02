@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(../css/fonts.css);
 @import url(../css/bootstrap.min.css);
 @import url(../css/slick.css);
@@ -1307,11 +1306,9 @@ a:hover {
   overflow: hidden; }
 
 body {
-  counter-reset: section;
-  /* Устанавливает значение
-                                                 счетчика, равным 0 */ }
+  counter-reset: section; }
 
-.steps__inner .dots__list li::before {
+.steps-huy .steps__inner .dots__list li::before {
   counter-increment: section;
   content: counter(section); }
 

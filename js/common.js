@@ -106,4 +106,4 @@ $(function(){
 
 });
 $('.swiper__list').addClass('dots__list');
-$('.steps__inner').addClass('.dots__list');
+$('.steps__inner').addClass('dots__list');
