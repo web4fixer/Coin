@@ -78,12 +78,6 @@ $(function(){
 
 
     });
-
-
-});
-$('.swiper__list').addClass('dots__list');
-
-$(function () {
     $('.about__inner').slick({
         dots:true,
         dotsClass:'dots__list',
@@ -99,5 +93,17 @@ $(function () {
         pauseOnHover:false,
         swipeToSlide:true
     });
+    var docWidth = document.documentElement.offsetWidth;
+
+    [].forEach.call(
+        document.querySelectorAll('*'),
+        function(el) {
+            if (el.offsetWidth > docWidth) {
+                console.log(el);
+            }
+        }
+    );
+
 });
+$('.swiper__list').addClass('dots__list');
 $('.steps__inner').addClass('.dots__list');

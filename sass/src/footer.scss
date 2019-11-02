@@ -36,6 +36,24 @@
   color: rgba(243, 228, 133, 0.7);
   margin-bottom: 37px;
   display: inline-block;
+  position: relative;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 9px;
+    background-image: url("../img/badge.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 9px 5px;
+  }
+}
+.footer__title.accordion.active:before {
+  transform: rotate(180deg);
+  transition: transform .3s linear;
 }
 .footerMenu__item {
   margin-bottom: 12px;
@@ -68,7 +86,7 @@
       right: 15px;
       top: 18px;
       width: 9px;
-      background-image: url("../../img/badge.svg");
+      background-image: url("../img/badge.png");
       background-position: 50%;
       background-repeat: no-repeat;
       background-size: 9px 5px;

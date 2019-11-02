@@ -1327,7 +1327,28 @@ a:hover {
   line-height: 24px;
   color: rgba(243, 228, 133, 0.7);
   margin-bottom: 37px;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
+  .footer__title:before {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 9px;
+    background-image: url("../img/badge.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 9px 5px; }
+
+.footer__title.accordion.active:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear; }
 
 .footerMenu__item {
   margin-bottom: 12px;
@@ -1360,7 +1381,7 @@ a:hover {
       right: 15px;
       top: 18px;
       width: 9px;
-      background-image: url("../../img/badge.svg");
+      background-image: url("../img/badge.png");
       background-position: 50%;
       background-repeat: no-repeat;
       background-size: 9px 5px; }
@@ -1643,6 +1664,8 @@ a:hover {
           -ms-flex-order: 1;
               order: 1;
       padding-right: 0; }
+  .footer__title {
+    margin-bottom: 20px; }
   .panel {
     display: none;
     overflow: hidden; }
@@ -1718,7 +1741,7 @@ a:hover {
     font-size: 16px;
     line-height: 24px; }
   .solve__inner {
-    padding: 75px 0 50px; }
+    padding: 50px 0 50px; }
   .solve__title {
     text-align: center;
     font-size: 24px;
@@ -1808,7 +1831,17 @@ a:hover {
     max-width: 100%; }
   .solve__disk {
     height: 100px;
-    width: 100px; } }
+    width: 100px; }
+  .steps__title {
+    font-size: 24px;
+    line-height: 12px;
+    margin-bottom: 20px; }
+  .solve__inner {
+    padding: 0 0 50px; }
+  .solve__title {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 28px 0 10px; } }
 
 @media (max-width: 375px) {
   .slider__contentBox {
@@ -1830,4 +1863,24 @@ a:hover {
     width: 100px;
     max-width: 100%; }
   .slider_item {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .steps__title {
+    font-size: 24px;
+    line-height: 12px;
+    margin-bottom: 20px; }
+  .solve__inner {
+    padding: 0 0 50px; }
+  .solve__title {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 28px 0 10px; }
+  .strategy__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .strategy__inner .strategy__col {
+      padding: 0 33px;
+      margin-bottom: 150px; } }
