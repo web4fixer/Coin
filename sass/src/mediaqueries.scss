@@ -308,7 +308,37 @@
   .slick-dots {
     padding-bottom: 20px;
   }
-}
+  .receive__inner {
+    flex-direction: column-reverse;
+    .receive__item-btn {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-right: 0;
+      padding: 0 20px;
+      .receiveItem__button {
+        width: 100%;
+        max-width: 335px;
+        &:last-child {
+          margin-bottom: auto;
+        }
+      }
+    }
+    .receive__item-box{
+      .receive__box {
+        min-height: 930px;
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+
+  }
+
+
 @media (max-width: 520px) {
   .wallets__btn  {
     font-size: 0.5em;
