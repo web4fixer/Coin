@@ -1010,9 +1010,12 @@
         align-items: inherit;
         font-style: normal;
         font-weight: 300;
-        font-size: 48px;
-        line-height: 120px;
+        //font-size: 48px;
+        line-height: 20px;
         border: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        outline: none;
       }
     }
     & .slick-active {
@@ -1053,6 +1056,8 @@
       background-color: #F3E485;
       opacity: 0.38;
       outline: none;
+      position: relative;
+      &
       button {
         height: 18px;
         width: 18px;
@@ -1064,9 +1069,13 @@
         align-items: inherit;
         font-style: normal;
         font-weight: 300;
-        font-size: 48px;
+        //font-size: 48px;
         line-height: 120px;
         border: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        display: none;
       }
       &.slick-active {
         background-color: #F3E485;
@@ -1086,5 +1095,20 @@
     }
   }
 }
+.slick-initialized {
+  overflow: hidden;
+}
+.slick-list {
+  overflow: hidden;
+}
+body {
+  counter-reset: section;                     /* Устанавливает значение
+                                                 счетчика, равным 0 */
+}
 
+.steps__inner .dots__list li::before {
+  counter-increment: section;
+  content: counter(section);
+
+}
 

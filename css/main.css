@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../css/fonts.css);
 @import url(../css/bootstrap.min.css);
 @import url(../css/slick.css);
@@ -19,7 +20,8 @@ p {
 
 body {
   min-width: 320px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  -webkit-overflow-scrolling: touch; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1227,9 +1229,11 @@ a:hover {
               align-items: inherit;
       font-style: normal;
       font-weight: 300;
-      font-size: 48px;
-      line-height: 120px;
-      border: none; }
+      line-height: 20px;
+      border: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      outline: none; }
   .swiper__inner .dots__list .slick-active {
     background-color: #F3E485;
     opacity: 1;
@@ -1261,7 +1265,8 @@ a:hover {
     border-radius: 50%;
     background-color: #F3E485;
     opacity: 0.38;
-    outline: none; }
+    outline: none;
+    position: relative; }
     .steps__inner .dots__list li button {
       height: 18px;
       width: 18px;
@@ -1280,9 +1285,12 @@ a:hover {
               align-items: inherit;
       font-style: normal;
       font-weight: 300;
-      font-size: 48px;
       line-height: 120px;
-      border: none; }
+      border: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      outline: none;
+      display: none; }
     .steps__inner .dots__list li.slick-active {
       background-color: #F3E485;
       opacity: 1;
@@ -1291,6 +1299,21 @@ a:hover {
 .salary__box-common .salaryInfo__item .salaryInfo__rate:last-child {
   opacity: unset;
   color: rgba(111, 101, 101, 0.5); }
+
+.slick-initialized {
+  overflow: hidden; }
+
+.slick-list {
+  overflow: hidden; }
+
+body {
+  counter-reset: section;
+  /* Устанавливает значение
+                                                 счетчика, равным 0 */ }
+
+.steps__inner .dots__list li::before {
+  counter-increment: section;
+  content: counter(section); }
 
 .footer {
   padding: 103px 0 0;
