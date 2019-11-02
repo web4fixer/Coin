@@ -1060,9 +1060,6 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1290,6 +1287,9 @@ a:hover {
       background-color: #F3E485;
       opacity: 1;
       color: #000000; }
+
+.slick-slider {
+  overflow: hidden !important; }
 
 .footer {
   padding: 103px 0 0;
@@ -1732,7 +1732,7 @@ a:hover {
         .receive__inner .receive__item-btn .receiveItem__button:last-child {
           margin-bottom: auto; }
     .receive__inner .receive__item-box .receive__box {
-      min-height: 930px;
+      min-height: 620px;
       margin-bottom: 20px; } }
 
 @media (max-width: 520px) {
@@ -1872,7 +1872,23 @@ a:hover {
   .solve__title {
     font-size: 16px;
     line-height: 30px;
-    margin: 28px 0 10px; } }
+    margin: 28px 0 10px; }
+  .about__list {
+    width: 100%;
+    text-align: center; }
+  .about__inner .about__col {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%; } }
 
 @media (max-width: 375px) {
   .slider__contentBox {

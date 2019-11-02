@@ -329,7 +329,7 @@
     }
     .receive__item-box{
       .receive__box {
-        min-height: 930px;
+        min-height: 620px;
         margin-bottom: 20px;
       }
     }
@@ -511,7 +511,19 @@
     line-height: 30px;
     margin: 28px 0 10px;
   }
-
+  .about__list {
+    width: 100%;
+    text-align: center;
+  }
+  .about__inner {
+    .about__col {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 375px) {
