@@ -82,7 +82,7 @@ $(function(){
         dots:true,
         dotsClass:'dots__list',
         infinite: true,
-        appendDots: $(".steps__inner"),
+        appendDots: $(".wrapper"),
         speed: 2000,
         autoplaySpeed: 2000,
         arrows: false,

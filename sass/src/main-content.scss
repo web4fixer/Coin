@@ -1005,17 +1005,13 @@
         border-radius: 50%;
         background-color: #CBBA4D;
         color: #000000;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: inherit;
         font-style: normal;
         font-weight: 300;
-        //font-size: 48px;
-        line-height: 20px;
         border: none;
         -moz-appearance: none;
         -webkit-appearance: none;
         outline: none;
+        font-size: 0;
       }
     }
     & .slick-active {
@@ -1023,9 +1019,9 @@
       opacity: 1;
       color: #000000;
     }
-    &:first-child {
-      display: none !important;
-    }
+    //&:first-child {
+    //  display: none !important;
+    //}
   }
 
 }
@@ -1064,18 +1060,13 @@
         border-radius: 50%;
         background-color: #CBBA4D;
         color: #000000;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: inherit;
         font-style: normal;
         font-weight: 300;
-        //font-size: 48px;
-        line-height: 120px;
         border: none;
         -moz-appearance: none;
         -webkit-appearance: none;
         outline: none;
-        display: none;
+        font-size: 0;
       }
       &.slick-active {
         background-color: #F3E485;
@@ -1101,13 +1092,54 @@
 .slick-list {
   overflow: hidden;
 }
-body {
+.steps-huy .steps__inner .dots__list{
   counter-reset: section;
+
+}
+
+.steps-huy2 .steps__inner .dots__list{
+
+  counter-reset: huy;
 }
 
 .steps-huy .steps__inner .dots__list li::before {
   counter-increment: section;
   content: counter(section);
-
 }
+.steps-huy2 .steps__inner .dots__list li::before {
+  counter-increment: huy;
+  content: counter(huy);
+  position: absolute;
+  top: -55px;
+  font-size: 30px
+}
+
+
+
+.steps-huy .steps__inner .dots__list li::before {
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  top: -55px;
+  font-size: 30px
+}
+
+//.steps-huy2 .steps__inner .dots__list li::before {
+//  counter-increment: section;
+//  content: counter(section);
+//  position: absolute;
+//  top: -55px;
+//  font-size: 30px
+//}
+
+
+
+
+
+
+
+
+
+
+
 
