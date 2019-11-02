@@ -1288,8 +1288,9 @@ a:hover {
       opacity: 1;
       color: #000000; }
 
-.slick-slider {
-  overflow: hidden !important; }
+.salary__box-common .salaryInfo__item .salaryInfo__rate:last-child {
+  opacity: unset;
+  color: rgba(111, 101, 101, 0.5); }
 
 .footer {
   padding: 103px 0 0;
