@@ -1130,25 +1130,28 @@
 .dropdown__list:hover .dropdown-content {
   display: block;
 }
-
-
+.menuLanguage {
+  position: relative;
+}
 .tooltip-content {
   position: absolute;
   z-index: 5;
 }
 .menuLanguage__tooltip {
   margin-top: 10px;
-  right: unset;
-  width: 400px;
+  right: 0;
+  width: 150px;
 }
 
 .lang {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 100%;
+  max-width: 150px;
 }
 .lang__item {
-  width: 50%;
+  width: 100%;
   font-size: 14px;
   position: relative;
 }
@@ -1158,7 +1161,8 @@
   font-weight: 700;
 }
 .lang--cols2 .lang__item {
-  width: 50%;
+  width: 100%;
+  max-width: 400px;
 }
 .lang__link {
   background-color: #fff;
