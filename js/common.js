@@ -6,7 +6,7 @@ $(function(){
         speed: 1000,
         // fade:true,
         cssEase: 'ease-in-out',
-        autoplaySpeed: 1000,
+        autoplaySpeed: 3000,
         arrows: false,
         slidesToScroll: 1,
         slidesToShow: 1,
@@ -62,17 +62,14 @@ $(function(){
             },
 
             {
-
-                duration: 8000,
+                duration: 10000,
                 easing:'linear',
                 step: function() {
                     $this.text(Math.floor(this.countNum));
                 },
                 complete: function() {
                     $this.text(this.countNum);
-                    //alert('finished');
                 }
-
             });
 
 
@@ -93,17 +90,31 @@ $(function(){
         pauseOnHover:false,
         swipeToSlide:true
     });
-    // var docWidth = document.documentElement.offsetWidth;
-    //
-    // [].forEach.call(
-    //     document.querySelectorAll('*'),
-    //     function(el) {
-    //         if (el.offsetWidth > docWidth) {
-    //             console.log(el);
-    //         }
-    //     }
-    // );
+
+
 
 });
 $('.swiper__list').addClass('dots__list');
 $('.steps__inner').addClass('dots__list');
+
+
+$(document).ready(function(){
+    $('.slider__box').on('init', function(event, slick){
+        $('.animated').addClass('activate fadeInRight');
+    });
+
+
+
+    $('.slider__box').on('afterChange', function(event, slick, currentSlide) {
+        $('.animated').removeClass('off');
+        $('.animated').addClass('activate fadeInUp');
+    });
+
+
+});
+
+$(document).ready(function(){
+    $(".header__lang").click(function(){
+        $(".menuLanguage__tooltip").toggle();
+    });
+});

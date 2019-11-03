@@ -871,15 +871,11 @@
     max-width: 100%;
     vertical-align: middle;
   }
-}.wallets__item--center {
-   transform: translateY(-12%);
+}
+.wallets__item--center {
+  transform: translateY(-12%);
   position: relative;
-  //height: 516px;
-  //max-height: 100%;
-  //width: 100%;
-  //max-width: 510px;
-  // background-image: url("../img/bg-frontBox.jpg");
- }
+}
  .wallets__link {
    display: block;
  }
@@ -949,7 +945,6 @@
     border: none;
     background-color:#ffffff;
     opacity: 0.2;
-
     text-indent: -9999px;
   }
 
@@ -1019,9 +1014,6 @@
       opacity: 1;
       color: #000000;
     }
-    //&:first-child {
-    //  display: none !important;
-    //}
   }
 
 }
@@ -1053,7 +1045,6 @@
       opacity: 0.38;
       outline: none;
       position: relative;
-      &
       button {
         height: 18px;
         width: 18px;
@@ -1098,7 +1089,6 @@
 }
 
 .steps-huy2 .steps__inner .dots__list{
-
   counter-reset: huy;
 }
 
@@ -1111,7 +1101,7 @@
   content: counter(huy);
   position: absolute;
   top: -55px;
-  font-size: 30px
+  font-size: 30px;
 }
 
 
@@ -1121,25 +1111,86 @@
   content: counter(section);
   position: absolute;
   top: -55px;
-  font-size: 30px
+  font-size: 30px;
 }
 
-//.steps-huy2 .steps__inner .dots__list li::before {
-//  counter-increment: section;
-//  content: counter(section);
-//  position: absolute;
-//  top: -55px;
-//  font-size: 30px
-//}
+.dropdown__list {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown__list:hover .dropdown-content {
+  display: block;
+}
 
 
+.tooltip-content {
+  position: absolute;
+  z-index: 5;
+}
+.menuLanguage__tooltip {
+  margin-top: 10px;
+  right: 0;
+  width: 400px;
+}
 
-
-
-
-
-
-
-
-
+.lang {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.lang__item {
+  width: 50%;
+  font-size: 14px;
+  position: relative;
+}
+.lang__item--special {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.lang--cols2 .lang__item {
+  width: 50%;
+}
+.lang__link {
+  background-color: #fff;
+  opacity: 0.8;
+  color: #000000;
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  padding-left: 55px;
+}
+.lang__link:before {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  content: "";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
+.lang__item--en .lang__link:before {
+  background-image: url(../../img/en-icon.png);
+}
+.lang__item--ru .lang__link:before {
+  background-image: url(../../img/en-icon.png);
+}
+.lang__item--de .lang__link:before {
+  background-image: url(../../img/en-icon.png);
+}
+.menuLanguage__tooltip {
+  display: none;
+}
 

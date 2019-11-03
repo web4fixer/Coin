@@ -60,7 +60,7 @@
   align-items: center;
 }
 .header__lang {
-  margin-left: 32px;
+  //margin-left: 32px;
 }
 
 .header_content {
@@ -89,4 +89,7 @@
   -webkit-animation: animatedown 0.3s;
   animation: animatedown 0.3s;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.menuLanguage {
+  margin-left: 32px ;
 }
