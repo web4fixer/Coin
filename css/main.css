@@ -1327,7 +1327,7 @@ a:hover {
 
 .menuLanguage__tooltip {
   margin-top: 10px;
-  right: 0;
+  right: unset;
   width: 400px; }
 
 .lang {
@@ -1535,11 +1535,9 @@ a:hover {
     color: rgba(255, 255, 255, 0.3);
     display: block; }
 
-@media (max-width: 1920px) {
-  .menuLanguage__tooltip {
-    right: -175px; } }
-
 @media (max-width: 1600px) {
+  .menuLanguage__tooltip {
+    right: -175px; }
   .slider__contentBox {
     padding: 246px 70px 325px; }
   .about__arrow {
