@@ -1083,30 +1083,28 @@
 .slick-list {
   overflow: hidden;
 }
-.steps-huy .steps__inner .dots__list{
+.steps-first .steps__inner .dots__list{
   counter-reset: section;
 
 }
 
-.steps-huy2 .steps__inner .dots__list{
-  counter-reset: huy;
+.steps-two .steps__inner .dots__list{
+  counter-reset: first;
 }
 
-.steps-huy .steps__inner .dots__list li::before {
+.steps-first .steps__inner .dots__list li::before {
   counter-increment: section;
   content: counter(section);
 }
-.steps-huy2 .steps__inner .dots__list li::before {
-  counter-increment: huy;
-  content: counter(huy);
+.steps-two .steps__inner .dots__list li::before {
+  counter-increment: first;
+  content: counter(first);
   position: absolute;
   top: -55px;
   font-size: 30px;
 }
 
-
-
-.steps-huy .steps__inner .dots__list li::before {
+.steps-first .steps__inner .dots__list li::before {
   counter-increment: section;
   content: counter(section);
   position: absolute;

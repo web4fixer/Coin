@@ -1,14 +1,10 @@
 .header {
   font-family: 'Roboto', sans-serif;
   background-color: #121212;
-  //background: linear-gradient(270deg, #2B353A 0%, #121212 106.25%);
-  //backdrop-filter: blur(4px);
 }
 .header__content {
   display: flex;
   justify-content: space-between;
-  //background: linear-gradient(270deg, #2B353A 0%, #121212 106.25%);
-  //backdrop-filter: blur(4px);
   background-color: #121212;
 }
 .header__content--inner {
@@ -58,9 +54,6 @@
 .header__nav {
   display: flex;
   align-items: center;
-}
-.header__lang {
-  //margin-left: 32px;
 }
 
 .header_content {

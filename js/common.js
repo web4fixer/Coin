@@ -1,5 +1,5 @@
 $(function(){
-
+    //init for first section slider
     $('.slider__box').slick({
         dots:true,
         infinite: true,
@@ -16,7 +16,7 @@ $(function(){
         pauseOnHover:false,
         swipeToSlide:true
     });
-
+    //init for second section slider
     $('.solve__inner').slick({
         dots:true,
         dotsClass:'dots__list',
@@ -48,33 +48,33 @@ $(function(){
             }
         });
     }
-
+    // init for wow plugin
     new WOW().init();
 
+    //init for numbers counter
 
+        $('.counter').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
 
-    $('.counter').each(function() {
-        var $this = $(this),
-            countTo = $this.attr('data-count');
-
-        $({ countNum: $this.text()}).animate({
-                countNum: countTo
-            },
-
-            {
-                duration: 10000,
-                easing:'linear',
-                step: function() {
-                    $this.text(Math.floor(this.countNum));
+            $({ countNum: $this.text()}).animate({
+                    countNum: countTo
                 },
-                complete: function() {
-                    $this.text(this.countNum);
-                }
-            });
 
+                {
+                    duration: 10000,
+                    // easing:'linear',
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                    }
+                });
+        });
 
-
-    });
+    //init for about section slider
     $('.about__inner').slick({
         dots:true,
         dotsClass:'dots__list',
@@ -91,30 +91,15 @@ $(function(){
         swipeToSlide:true
     });
 
-
-
+//add dots class to element
 });
 $('.swiper__list').addClass('dots__list');
 $('.steps__inner').addClass('dots__list');
 
-
-$(document).ready(function(){
-    $('.slider__box').on('init', function(event, slick){
-        $('.animated').addClass('activate fadeInRight');
-    });
-
-
-
-    $('.slider__box').on('afterChange', function(event, slick, currentSlide) {
-        $('.animated').removeClass('off');
-        $('.animated').addClass('activate fadeInUp');
-    });
-
-
-});
-
+// init for header lang toggle
 $(document).ready(function(){
     $(".header__lang").click(function(){
         $(".menuLanguage__tooltip").toggle();
     });
 });
+

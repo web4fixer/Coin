@@ -1,13 +1,17 @@
-//@media (max-width: 1920px) {
-//
-//}
+@media (max-width: 1920px) {
+  .slider__contentBox {
+    width: 100%;
+    padding: 200px 45px;
+  }
+}
 
 @media (max-width: 1600px) {
   .menuLanguage__tooltip {
     right: 0;
   }
   .slider__contentBox {
-    padding: 246px 70px 325px;
+    padding: 200px 65px;
+    width: 100%;
   }
   .about__arrow {
     display: none;
@@ -18,7 +22,6 @@
     background-position: center;
   }
   .slider__contentBox {
-    padding: 150px 40px 150px;
     justify-content: center;
   }
   .slider_item-content {
@@ -88,8 +91,6 @@
 }
 @media (max-width: 900px) {
   .solve__inner {
-    //flex-direction: column-reverse;
-    //align-items: center;
     padding: 50px 0 50px;
   }
   .minter__inner {
@@ -291,7 +292,6 @@
   .footer__social{
     display: flex;
     flex-direction: column;
-    display: flex;
     flex-basis: unset;
     width: 100%;
   }
