@@ -4,8 +4,10 @@
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';
 
-// fonts
+//// fonts
 @import   '../css/fonts.css';
+// fonts
+@import   'src/fonts';
 // libs
 @import   '../css/bootstrap.min.css';
 @import   '../css/slick.css';
